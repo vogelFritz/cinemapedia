@@ -43,7 +43,7 @@ class _Slide extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.only(bottom: 30),
         child: GestureDetector(
-          onTap: () => context.push('/movie/${movie.id}'),
+          onTap: () => context.push('/home/0/movie/${movie.id}'),
           child: DecoratedBox(
               decoration: decoration,
               child: ClipRRect(

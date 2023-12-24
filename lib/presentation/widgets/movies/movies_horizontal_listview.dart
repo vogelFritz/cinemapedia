@@ -61,8 +61,8 @@ class _MoviesHorizontalListviewState extends State<MoviesHorizontalListview> {
                     physics: const BouncingScrollPhysics(),
                     itemBuilder: (context, index) {
                       return GestureDetector(
-                        onTap: () =>
-                            context.push('/movie/${widget.movies[index].id}'),
+                        onTap: () => context
+                            .push('/home/0/movie/${widget.movies[index].id}'),
                         child: FadeInRight(
                             child: _Slide(movie: widget.movies[index])),
                       );
